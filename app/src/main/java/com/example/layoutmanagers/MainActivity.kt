@@ -16,7 +16,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         initViews()
     }
-
     private fun initViews() {
         loadList()
         val rvStory=findViewById<RecyclerView>(R.id.rv_story)
@@ -24,45 +23,44 @@ class MainActivity : AppCompatActivity() {
         val layoutManager=LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
         val layoutManager1=GridLayoutManager(this,2)
         val layoutManager2=StaggeredGridLayoutManager(2,StaggeredGridLayoutManager.VERTICAL)
-        rvStory.layoutManager=layoutManager2
-
+        rvStory.layoutManager=layoutManager1
     }
-
-
     private fun loadList(){
         list=  ArrayList()
-        list.add(Story(R.drawable.img, name = "Qish",))
-        list.add(Story(R.drawable.img1,name = "Oyla",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
         list.add(Story(R.drawable.img2,name = "Oyla",))
-        list.add(Story(R.drawable.img, name = "Qish",))
         list.add(Story(R.drawable.img1,name = "Oyla",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
         list.add(Story(R.drawable.img2,name = "Oyla",))
-        list.add(Story(R.drawable.img, name = "Qish",))
         list.add(Story(R.drawable.img1,name = "Oyla",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
         list.add(Story(R.drawable.img2,name = "Oyla",))
-        list.add(Story(R.drawable.img, name = "Qish",))
         list.add(Story(R.drawable.img1,name = "Oyla",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
         list.add(Story(R.drawable.img2,name = "Oyla",))
-        list.add(Story(R.drawable.img, name = "Qish",))
         list.add(Story(R.drawable.img1,name = "Oyla",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
         list.add(Story(R.drawable.img2,name = "Oyla",))
-        list.add(Story(R.drawable.img, name = "Qish",))
         list.add(Story(R.drawable.img1,name = "Oyla",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
         list.add(Story(R.drawable.img2,name = "Oyla",))
-        list.add(Story(R.drawable.img, name = "Qish",))
         list.add(Story(R.drawable.img1,name = "Oyla",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
         list.add(Story(R.drawable.img2,name = "Oyla",))
-        list.add(Story(R.drawable.img, name = "Qish",))
         list.add(Story(R.drawable.img1,name = "Oyla",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
         list.add(Story(R.drawable.img2,name = "Oyla",))
+        list.add(Story(R.drawable.img1,name = "Oyla",))
+        list.add(Story(R.drawable.img5, name = "Qish",))
 
-        list.add(Story(R.drawable.img, name = "Qish",))
-        list.add(Story(R.drawable.img1,name = "Oyla",))
-        list.add(Story(R.drawable.img2,name = "Oyla",))
 
-        list.add(Story(R.drawable.img, name = "Qish",))
-        list.add(Story(R.drawable.img1,name = "Oyla",))
-        list.add(Story(R.drawable.img2,name = "Oyla",))
 
 
 

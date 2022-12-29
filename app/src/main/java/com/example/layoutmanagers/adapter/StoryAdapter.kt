@@ -8,7 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.layoutmanagers.R
 import com.example.layoutmanagers.model.Story
-
 class StoryAdapter(val list:ArrayList<Story>):RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val view=LayoutInflater.from(parent.context).inflate(R.layout.item_story,parent,false)

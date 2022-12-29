@@ -3,14 +3,77 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+            <LinearLayout
+                android:paddingStart="5dp"
+                android:paddingRight="13dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/img"
+                    app:shapeAppearanceOverlay="@style/circle"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="People"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_account_box_24"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:padding="4dp"
+            android:background="@drawable/prastoy"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stories(17)"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_marginHorizontal="15dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Active(156)"
+            android:textColor="#817F7F"
+            android:textStyle="bold"/>
+    </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="15dp"
         android:id="@+id/rv_story"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
-
-
-
+        android:layout_height="wrap_content"/>
 </LinearLayout>
